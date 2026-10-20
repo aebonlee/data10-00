@@ -19,6 +19,24 @@ window.PROJECTS = [
     "planDocx": "https://github.com/aebonlee/data10-05/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
   },
   {
+    "no": "07",
+    "repo": "data10-07",
+    "name": "이준호",
+    "title": "협력사 공정불량 분석·품질개선 Master Plan",
+    "oneLine": "협력사 공정불량 Raw data(Excel)를 올려 불량유형을 분류·분석하고, 불량유형별 개선대책 Master Plan 초안(AI 반자동)을 만들어 간트차트로 계획·실적을 관리하고 Excel 보고서로 내보내는 브라우저 도구",
+    "kind": "웹 도구",
+    "stage": "1단계 개발 완료 (2026-10-20)",
+    "lastDate": "2026-10-20",
+    "planNote": "수강생 제출 자료 기반",
+    "extras": [],
+    "planVersion": "v0.1",
+    "hasDb": false,
+    "toolUrl": "https://aebonlee.github.io/data10-07/",
+    "repoUrl": "https://github.com/aebonlee/data10-07",
+    "planUrl": "https://github.com/aebonlee/data10-07/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
+    "planDocx": "https://github.com/aebonlee/data10-07/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
+  },
+  {
     "no": "10",
     "repo": "data10-10",
     "name": "나선준",
