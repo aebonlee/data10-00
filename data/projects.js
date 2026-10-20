@@ -1,6 +1,24 @@
 // 자동 생성 — 손으로 고치지 말 것. node scripts/build-data.mjs
 window.PROJECTS = [
   {
+    "no": "04",
+    "repo": "data10-04",
+    "name": "이은학",
+    "title": "개발장비 외관평가 Agent",
+    "oneLine": "외관검사 체크시트와 이슈 리스트를 이어 항목별 실제 이슈 빈도·최근성·심각도 점수를 내고, 신규 개발모델용 체크시트(중점·일반·생략 후보·신규 항목 후보)와 이슈 발생 우려 포인트 리포트를 만드는 브라우저 도구",
+    "kind": "웹 도구",
+    "stage": "1단계 개발 완료 (2026-10-20)",
+    "lastDate": "2026-10-20",
+    "planNote": "수강생 제출 자료 기반",
+    "extras": [],
+    "planVersion": "v0.1",
+    "hasDb": false,
+    "toolUrl": "https://aebonlee.github.io/data10-04/",
+    "repoUrl": "https://github.com/aebonlee/data10-04",
+    "planUrl": "https://github.com/aebonlee/data10-04/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
+    "planDocx": "https://github.com/aebonlee/data10-04/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
+  },
+  {
     "no": "05",
     "repo": "data10-05",
     "name": "박주헌",
