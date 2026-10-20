@@ -37,6 +37,24 @@ window.PROJECTS = [
     "planDocx": "https://github.com/aebonlee/data10-05/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
   },
   {
+    "no": "06",
+    "repo": "data10-06",
+    "name": "유상진",
+    "title": "설비고장 원인 및 진단파악(AI)",
+    "oneLine": "증상을 넣으면 과거 정비 사례에서 가능한 고장 원인과 「먼저 확인할 것」을 짚어 주고, 쌓인 정비 사례로 초보자용 자체 정비 가이드북과 외부 수리 비용 현황을 만드는 브라우저 도구",
+    "kind": "웹 도구",
+    "stage": "1단계 개발 완료 (2026-10-20)",
+    "lastDate": "2026-10-20",
+    "planNote": "수강생 제출 자료 기반",
+    "extras": [],
+    "planVersion": "v0.1",
+    "hasDb": false,
+    "toolUrl": "https://aebonlee.github.io/data10-06/",
+    "repoUrl": "https://github.com/aebonlee/data10-06",
+    "planUrl": "https://github.com/aebonlee/data10-06/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
+    "planDocx": "https://github.com/aebonlee/data10-06/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
+  },
+  {
     "no": "07",
     "repo": "data10-07",
     "name": "이준호",
