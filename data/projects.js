@@ -125,6 +125,24 @@ window.PROJECTS = [
     "repoUrl": "https://github.com/aebonlee/data10-10",
     "planUrl": "https://github.com/aebonlee/data10-10/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
     "planDocx": "https://github.com/aebonlee/data10-10/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
+  },
+  {
+    "no": "11",
+    "repo": "data10-11",
+    "name": "이성헌",
+    "title": "Deep drawing press 제품 불량 최소화",
+    "oneLine": "Deep drawing press 작업일보 엑셀을 여러 달 쌓아 일별·월별·금형·소재별 작업량 대비 불량률, 4M·계절별 「불량이 몰린 조건」, 금형 보수 전후 비교, AI 프롬프트(사실만·이름 가림)와 보고서 초안을 만드는 브라우저 도구",
+    "kind": "웹 도구",
+    "stage": "1단계 개발 완료 (2026-10-20)",
+    "lastDate": "2026-10-20",
+    "planNote": "수강생 제출 자료 기반",
+    "extras": [],
+    "planVersion": "v0.1",
+    "hasDb": false,
+    "toolUrl": "https://aebonlee.github.io/data10-11/",
+    "repoUrl": "https://github.com/aebonlee/data10-11",
+    "planUrl": "https://github.com/aebonlee/data10-11/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
+    "planDocx": "https://github.com/aebonlee/data10-11/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
   }
 ];
 window.PROJECTS_UPDATED = "2026-10-20";
