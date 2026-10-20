@@ -37,6 +37,24 @@ window.PROJECTS = [
     "planDocx": "https://github.com/aebonlee/data10-02/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
   },
   {
+    "no": "03",
+    "repo": "data10-03",
+    "name": "황수용",
+    "title": "검사 기준서 작성 자동화",
+    "oneLine": "PDF 도면(벡터)의 치수 · 공차 · 기하공차 · 용접 표기를 인식해 번호 풍선을 자동으로 달고(목표 1), 풍선이 이미 있는 도면에서는 풍선별 정보를 엑셀로 뽑고(목표 2), 무엇보다 먼저 정답과 대조해 인식 일치율을 재는 브라우저 도구",
+    "kind": "웹 도구",
+    "stage": "1단계 개발 완료 (2026-10-20)",
+    "lastDate": "2026-10-20",
+    "planNote": "수강생 제출 자료 기반",
+    "extras": [],
+    "planVersion": "v0.1",
+    "hasDb": false,
+    "toolUrl": "https://aebonlee.github.io/data10-03/",
+    "repoUrl": "https://github.com/aebonlee/data10-03",
+    "planUrl": "https://github.com/aebonlee/data10-03/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
+    "planDocx": "https://github.com/aebonlee/data10-03/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
+  },
+  {
     "no": "04",
     "repo": "data10-04",
     "name": "이은학",
