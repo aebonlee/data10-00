@@ -19,6 +19,24 @@ window.PROJECTS = [
     "planDocx": "https://github.com/aebonlee/data10-01/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
   },
   {
+    "no": "02",
+    "repo": "data10-02",
+    "name": "이준호",
+    "title": "APQP Smart Review — 초도품 APQP 제출서류 정합성 검증·승인 검토",
+    "oneLine": "협력사 초도품 APQP 서류(Flow Chart · 관리계획서 · PFMEA · 검사기준서 · 외주품 리스트)를 올리면 문서 간 공정·관리항목 정합성을 규칙으로 대조해 누락·불일치·확인 필요 목록과 승인 의견 제안을 내고, APQP 승인 검토 보고서(Excel·인쇄·Word)와 재제출 비교까지 만드는 브라우저 도구",
+    "kind": "웹 도구",
+    "stage": "1단계 개발 완료 (2026-10-20)",
+    "lastDate": "2026-10-20",
+    "planNote": "수강생 제출 자료 기반",
+    "extras": [],
+    "planVersion": "v0.1",
+    "hasDb": false,
+    "toolUrl": "https://aebonlee.github.io/data10-02/",
+    "repoUrl": "https://github.com/aebonlee/data10-02",
+    "planUrl": "https://github.com/aebonlee/data10-02/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
+    "planDocx": "https://github.com/aebonlee/data10-02/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
+  },
+  {
     "no": "04",
     "repo": "data10-04",
     "name": "이은학",
