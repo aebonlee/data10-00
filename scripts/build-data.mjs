@@ -7,7 +7,9 @@ import { fileURLToPath } from 'node:url'
 const HERE = dirname(fileURLToPath(import.meta.url))
 const ROOT = join(HERE, '..', '..')
 // README 가 아직 없는 폴더(다른 작업이 만드는 중)는 건너뛴다
-const dirs = readdirSync(ROOT).filter((d) => /^data10-(\d\d)$/.test(d) && d !== 'data10-00' && existsSync(join(ROOT, d, 'README.md'))).sort()
+// 아직 깃허브에 올리지 않은 리포(원격 origin 없음)도 건너뛴다 — 링크가 404 가 되므로
+const pushed = (d) => existsSync(join(ROOT, d, '.git/config')) && /\[remote "origin"\]/.test(readFileSync(join(ROOT, d, '.git/config'), 'utf8'))
+const dirs = readdirSync(ROOT).filter((d) => /^data10-(\d\d)$/.test(d) && d !== 'data10-00' && existsSync(join(ROOT, d, 'README.md')) && pushed(d)).sort()
 // 다른 리포로 합친 과제는 목록에서 뺀다 — README 에 「| 상태 | **통합됨 → data10-NN** … |」 가 있으면(합친 사실은 받는 쪽 README 진행 단계에 적는다)
 const mergedInto = (d) => (readFileSync(join(ROOT, d, 'README.md'), 'utf8').match(/^\|\s*상태\s*\|\s*\**통합됨\s*→\s*(data10-\d\d)/m) || [])[1] || ''
 const merged = dirs.filter(mergedInto)
