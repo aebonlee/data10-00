@@ -1,6 +1,24 @@
 // 자동 생성 — 손으로 고치지 말 것. node scripts/build-data.mjs
 window.PROJECTS = [
   {
+    "no": "01",
+    "repo": "data10-01",
+    "name": "조병철",
+    "title": "굴착기 카운터웨이트 프레스 예지보전",
+    "oneLine": "프레스 로그(타수·가동 시간·전류·전압·온도·진동)를 가져와 금형별 타수 집계·교체 예정일, 오버홀 알림, 통계 기준 이상 감지, 월별 프레스 종류별 타수 보고서를 만드는 브라우저 도구",
+    "kind": "웹 도구",
+    "stage": "1단계 개발 완료 (2026-10-20)",
+    "lastDate": "2026-10-20",
+    "planNote": "수강생 제출 자료 기반",
+    "extras": [],
+    "planVersion": "v0.1",
+    "hasDb": false,
+    "toolUrl": "https://aebonlee.github.io/data10-01/",
+    "repoUrl": "https://github.com/aebonlee/data10-01",
+    "planUrl": "https://github.com/aebonlee/data10-01/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
+    "planDocx": "https://github.com/aebonlee/data10-01/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
+  },
+  {
     "no": "04",
     "repo": "data10-04",
     "name": "이은학",
