@@ -127,6 +127,24 @@ window.PROJECTS = [
     "planDocx": "https://github.com/aebonlee/data10-08/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
   },
   {
+    "no": "09",
+    "repo": "data10-09",
+    "name": "신나희",
+    "title": "품질 업무 프로세스 문서 작성 및 신입사원 교육 자료 제작",
+    "oneLine": "품질 업무 목록(52가지 엑셀)에서 핵심 업무 10~15개를 고르고, 문서 목록 · 문서 맵 · 연계 · 누락 체크리스트, 직책별 업무 흐름도(단계 표 → 자동 그림), 신입사원 교육 커리큘럼과 업무별 「교육 한 장」을 만드는 브라우저 도구",
+    "kind": "웹 도구",
+    "stage": "1단계 개발 완료 (2026-10-20)",
+    "lastDate": "2026-10-20",
+    "planNote": "수강생 제출 자료 기반",
+    "extras": [],
+    "planVersion": "v0.1",
+    "hasDb": false,
+    "toolUrl": "https://aebonlee.github.io/data10-09/",
+    "repoUrl": "https://github.com/aebonlee/data10-09",
+    "planUrl": "https://github.com/aebonlee/data10-09/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
+    "planDocx": "https://github.com/aebonlee/data10-09/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
+  },
+  {
     "no": "10",
     "repo": "data10-10",
     "name": "나선준",
