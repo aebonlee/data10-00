@@ -91,6 +91,24 @@ window.PROJECTS = [
     "planDocx": "https://github.com/aebonlee/data10-07/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
   },
   {
+    "no": "08",
+    "repo": "data10-08",
+    "name": "박상선",
+    "title": "프레임 제작 생산성 개선",
+    "oneLine": "일일 실적으로 목표 대수 대비 달성률(90% 선)을 관리하고, 현장 측정으로 공정별 작업시간·손실을 재어 병목공정·인원 배분·개선 전후 단가 절감을 분석하며 표준작업서 초안을 만드는 브라우저 도구",
+    "kind": "웹 도구",
+    "stage": "1단계 개발 완료 (2026-10-20)",
+    "lastDate": "2026-10-20",
+    "planNote": "수강생 제출 자료 기반",
+    "extras": [],
+    "planVersion": "v0.1",
+    "hasDb": false,
+    "toolUrl": "https://aebonlee.github.io/data10-08/",
+    "repoUrl": "https://github.com/aebonlee/data10-08",
+    "planUrl": "https://github.com/aebonlee/data10-08/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
+    "planDocx": "https://github.com/aebonlee/data10-08/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
+  },
+  {
     "no": "10",
     "repo": "data10-10",
     "name": "나선준",
