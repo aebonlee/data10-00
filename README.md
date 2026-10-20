@@ -2,6 +2,8 @@
 
 **https://aebonlee.github.io/data10-00/**
 
+패들릿: https://padlet.com/dreamitbiz/2-https-padlet-com-dreamitbiz-build_data2-s0244fv4cwr5xfb6n6r1
+
 수강생이 자기 직무의 현안을 직접 기획하고, 그 기획서를 바탕으로 만든 현장 업무 도구를 한 페이지에서 소개합니다.
 과제마다 **도구 바로 쓰기 · 기획서(Markdown·Word) · 리포지토리** 링크가 있습니다.
 
