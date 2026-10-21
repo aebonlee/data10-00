@@ -98,7 +98,7 @@
   if (tb) {
     var IN = window.INTAKE || []
     var PR = window.PRIORITY || []
-    var TIER = { 1: '1순위 · 이번 묶음', 2: '2순위 · 자료 오는 대로', 3: '3순위 · 범위 확인 뒤', 9: '중단 · 제출자 요청' }
+    var TIER = { 1: '1순위 · 이번 묶음', 2: '2순위 · 자료 오는 대로', 3: '3순위 · 범위 확인 뒤', 9: '보관 · 보완 후 다시 접수' }
     var rows = PR.map(function (r, i) { return { r: r, i: i + 1 } })
       .filter(function (x) { return IN.some(function (a) { return a.no === x.r.no }) })
     IN.forEach(function (a) { if (!PR.some(function (r) { return r.no === a.no })) rows.push({ r: { no: a.no, tier: 0, why: '새 접수 — 검토 중' }, i: 0 }) })
