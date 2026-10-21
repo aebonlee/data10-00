@@ -233,6 +233,24 @@ window.PROJECTS = [
     "repoUrl": "https://github.com/aebonlee/data10-13",
     "planUrl": "https://github.com/aebonlee/data10-13/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
     "planDocx": "https://github.com/aebonlee/data10-13/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
+  },
+  {
+    "no": "14",
+    "repo": "data10-14",
+    "name": "이미란",
+    "title": "재고실사 비효율 개선 (재고실사 Start-End)",
+    "oneLine": "ERP 재고 엑셀로 기준 일자·시각이 박힌 작업지시서를 만들고, 휴대폰으로 현장 실사 수량·사유·사진을 남기고, 담당자별 결과를 합쳐 차이대사·창고별·자재유형별·자재타입별 분석과 버전·원천 기록 연결이 있는 결과 보고서를 만드는 브라우저 도구",
+    "kind": "웹 도구",
+    "stage": "1단계 개발 완료 (2026-10-21)",
+    "lastDate": "2026-10-21",
+    "planNote": "수강생 제출 글·데이터 인벤토리 기반",
+    "extras": [],
+    "planVersion": "v0.1",
+    "hasDb": true,
+    "toolUrl": "https://aebonlee.github.io/data10-14/",
+    "repoUrl": "https://github.com/aebonlee/data10-14",
+    "planUrl": "https://github.com/aebonlee/data10-14/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
+    "planDocx": "https://github.com/aebonlee/data10-14/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
   }
 ];
 window.PROJECTS_UPDATED = "2026-10-21";
