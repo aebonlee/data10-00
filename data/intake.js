@@ -54,5 +54,20 @@ window.INTAKE = [
     "no": "11",
     "name": "이성헌",
     "title": "Deep drawing press 제품 불량 최소화"
+  },
+  {
+    "no": "12",
+    "name": "윤한산",
+    "title": "각종 Certification (특히 선급 Type-Approval) 에 대하여 관리방안 개선"
+  },
+  {
+    "no": "13",
+    "name": "구민채",
+    "title": "불량 제품 파악"
+  },
+  {
+    "no": "14",
+    "name": "이미란",
+    "title": "재고실사 비효율 개선"
   }
 ];

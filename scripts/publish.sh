@@ -5,7 +5,7 @@ set -e
 NN="$1"; DESC="$2"; ROOT="$(cd "$(dirname "$0")/../.." && pwd)"; R="data10-$NN"
 cd "$ROOT/$R"
 test -z "$(git status --porcelain)" || { echo "$R: 커밋 안 된 변경이 있음"; exit 1; }
-if grep -rlE "건화|창원|HD건설|현대건설|한울" . --exclude-dir=vendor --exclude-dir=.git --exclude-dir=node_modules; then echo "$R: 회사명이 남아 있음"; exit 1; fi
+if grep -rlE "건화|창원|HD건설|현대건설|한울|파카|하니핀|Parker|두산|모트롤" . --exclude-dir=vendor --exclude-dir=.git --exclude-dir=node_modules; then echo "$R: 회사명이 남아 있음"; exit 1; fi
 git branch -M main
 gh repo create "aebonlee/$R" --public --source . --push --homepage "https://aebonlee.github.io/$R/" --description "현장 데이터 디지털화 전문가과정 2차수 · $DESC"
 gh api -X POST "repos/aebonlee/$R/pages" -f "source[branch]=main" -f "source[path]=/" --jq .html_url

@@ -197,7 +197,25 @@ window.PROJECTS = [
     "repoUrl": "https://github.com/aebonlee/data10-11",
     "planUrl": "https://github.com/aebonlee/data10-11/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
     "planDocx": "https://github.com/aebonlee/data10-11/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
+  },
+  {
+    "no": "12",
+    "repo": "data10-12",
+    "name": "윤한산",
+    "title": "각종 Certification(선급 Type Approval) 관리방안 개선",
+    "oneLine": "인증 관리대장 엑셀을 넣으면 만료일에서 거꾸로 갱신 일정(준비·신청·기관 심사·피드백·발급)을 세워 간트·상태 신호로 보여 주고, 영업·품질·개발 부서별 알림 메일 초안, 업무흐름도(R/R), 이전/신규 인증서 변경 비교와 보고서를 만드는 브라우저 도구",
+    "kind": "웹 도구",
+    "stage": "1단계 개발 완료 (2026-10-21)",
+    "lastDate": "2026-10-21",
+    "planNote": "수강생 제출 자료 기반",
+    "extras": [],
+    "planVersion": "v0.1",
+    "hasDb": false,
+    "toolUrl": "https://aebonlee.github.io/data10-12/",
+    "repoUrl": "https://github.com/aebonlee/data10-12",
+    "planUrl": "https://github.com/aebonlee/data10-12/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
+    "planDocx": "https://github.com/aebonlee/data10-12/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
   }
 ];
-window.PROJECTS_UPDATED = "2026-10-20";
-window.PROJECTS_LATEST = "2026-10-20";
+window.PROJECTS_UPDATED = "2026-10-21";
+window.PROJECTS_LATEST = "2026-10-21";
