@@ -215,6 +215,24 @@ window.PROJECTS = [
     "repoUrl": "https://github.com/aebonlee/data10-12",
     "planUrl": "https://github.com/aebonlee/data10-12/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
     "planDocx": "https://github.com/aebonlee/data10-12/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
+  },
+  {
+    "no": "13",
+    "repo": "data10-13",
+    "name": "구민채",
+    "title": "불량 제품 파악",
+    "oneLine": "공유폴더의 수기 검사표 PDF 를 검사 예정 목록과 대조해 업로드 누락을 찾고, 검사표를 보며 값을 옮기거나(AI 반자동 판독) 스펙 기준표로 합불을 판정해 불합격 리스트 · 검사 누락 리스트 · 월별 불량률을 만드는 브라우저 도구",
+    "kind": "웹 도구",
+    "stage": "1단계 개발 완료 (2026-10-21)",
+    "lastDate": "2026-10-21",
+    "planNote": "수강생 제출 자료 기반",
+    "extras": [],
+    "planVersion": "v0.1",
+    "hasDb": false,
+    "toolUrl": "https://aebonlee.github.io/data10-13/",
+    "repoUrl": "https://github.com/aebonlee/data10-13",
+    "planUrl": "https://github.com/aebonlee/data10-13/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
+    "planDocx": "https://github.com/aebonlee/data10-13/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
   }
 ];
 window.PROJECTS_UPDATED = "2026-10-21";
