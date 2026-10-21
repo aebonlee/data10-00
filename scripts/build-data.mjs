@@ -13,6 +13,9 @@ const dirs = readdirSync(ROOT).filter((d) => /^data10-(\d\d)$/.test(d) && d !== 
 // 다른 리포로 합친 과제는 목록에서 뺀다 — README 에 「| 상태 | **통합됨 → data10-NN** … |」 가 있으면(합친 사실은 받는 쪽 README 진행 단계에 적는다)
 const mergedInto = (d) => (readFileSync(join(ROOT, d, 'README.md'), 'utf8').match(/^\|\s*상태\s*\|\s*\**통합됨\s*→\s*(data10-\d\d)/m) || [])[1] || ''
 const merged = dirs.filter(mergedInto)
+// 제출자 요청으로 중단한 과제도 목록에서 뺀다 — README 에 「| 상태 | **중단** … |」
+const stopped = (d) => /^\|\s*상태\s*\|\s*\**중단/m.test(readFileSync(join(ROOT, d, 'README.md'), 'utf8'))
+for (const d of dirs.filter(stopped)) { console.log(`${d} 중단 — 목록에서 뺌`); dirs.splice(dirs.indexOf(d), 1) }
 for (const d of merged) { console.log(`${d} → ${mergedInto(d)} 에 통합됨 — 목록에서 뺌`); dirs.splice(dirs.indexOf(d), 1) }
 
 const cell = (md, key) => {

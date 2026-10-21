@@ -127,3 +127,5 @@ button, input { font: inherit; }
 .intake-table td a { color: var(--brand-2); font-weight: 600; }
 .hero .links { margin: 0 0 18px; }
 .hero .links a { color: var(--on-brand); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; word-break: keep-all; overflow-wrap: break-word; }
+.intake-table tr.tier-9 td { color: var(--muted, #888); }
+.intake-table tr.tier-9 td:nth-child(5) { text-decoration: none; }
