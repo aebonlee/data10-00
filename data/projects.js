@@ -14,9 +14,8 @@ window.PROJECTS = [
     "planVersion": "v0.2",
     "hasDb": false,
     "toolUrl": "https://aebonlee.github.io/data10-01/",
-    "repoUrl": "https://github.com/aebonlee/data10-01",
-    "planUrl": "https://github.com/aebonlee/data10-01/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
-    "planDocx": "https://github.com/aebonlee/data10-01/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
+    "readmeUrl": "view.html?r=data10-01&d=readme",
+    "planUrl": "view.html?r=data10-01&d=plan"
   },
   {
     "no": "03",
@@ -25,16 +24,15 @@ window.PROJECTS = [
     "title": "검사 기준서 작성 자동화",
     "oneLine": "PDF 도면(벡터)의 치수 · 공차 · 기하공차 · 용접 표기를 인식해 번호 풍선을 자동으로 달고(목표 1), 풍선이 이미 있는 도면에서는 풍선별 정보를 엑셀로 뽑고(목표 2), 무엇보다 먼저 정답과 대조해 인식 일치율을 재는 브라우저 도구.",
     "kind": "웹 도구",
-    "stage": "1단계 개발 (2026-10-20) → **2차 반영 (2026-10-21)** — 실제 도면 2장으로 측정 · 규칙 보정",
+    "stage": "1단계 개발 (2026-10-20) → 2차 반영 (2026-10-21) → **3차 반영 (2026-10-21)** — 새 도면 2종 · 사람이 쓴 기준서로 먼저 재고 고침",
     "lastDate": "2026-10-21",
-    "planNote": "수강생 회신(실제 도면 2장 · 정답 풍선 PDF · 일치율 식 · 자주 틀리는 사례) 반영, 11장 2차 반영 내역 신설",
+    "planNote": "3차 회신(「2x」 뜻 · 다른 도면 2종과 사람이 쓴 전체 기준서 · 한 줄 선 글꼴도 검사 대상) 반영, 11.6 3차 반영 절 신설",
     "extras": [],
-    "planVersion": "v0.2",
+    "planVersion": "v0.3",
     "hasDb": false,
     "toolUrl": "https://aebonlee.github.io/data10-03/",
-    "repoUrl": "https://github.com/aebonlee/data10-03",
-    "planUrl": "https://github.com/aebonlee/data10-03/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
-    "planDocx": "https://github.com/aebonlee/data10-03/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
+    "readmeUrl": "view.html?r=data10-03&d=readme",
+    "planUrl": "view.html?r=data10-03&d=plan"
   },
   {
     "no": "04",
@@ -50,9 +48,8 @@ window.PROJECTS = [
     "planVersion": "v0.1",
     "hasDb": false,
     "toolUrl": "https://aebonlee.github.io/data10-04/",
-    "repoUrl": "https://github.com/aebonlee/data10-04",
-    "planUrl": "https://github.com/aebonlee/data10-04/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
-    "planDocx": "https://github.com/aebonlee/data10-04/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
+    "readmeUrl": "view.html?r=data10-04&d=readme",
+    "planUrl": "view.html?r=data10-04&d=plan"
   },
   {
     "no": "05",
@@ -68,9 +65,8 @@ window.PROJECTS = [
     "planVersion": "v0.2",
     "hasDb": false,
     "toolUrl": "https://aebonlee.github.io/data10-05/",
-    "repoUrl": "https://github.com/aebonlee/data10-05",
-    "planUrl": "https://github.com/aebonlee/data10-05/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
-    "planDocx": "https://github.com/aebonlee/data10-05/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
+    "readmeUrl": "view.html?r=data10-05&d=readme",
+    "planUrl": "view.html?r=data10-05&d=plan"
   },
   {
     "no": "06",
@@ -79,34 +75,32 @@ window.PROJECTS = [
     "title": "설비고장 원인 및 진단파악(AI)",
     "oneLine": "증상을 넣으면 과거 정비 사례에서 가능한 고장 원인과 「먼저 확인할 것」을 짚어 주고, 쌓인 정비 사례로 초보자용 자체 정비 가이드북과 외부 수리 비용 현황을 만드는 브라우저 도구",
     "kind": "웹 도구",
-    "stage": "1단계 개발 완료 (2026-10-20)",
-    "lastDate": "2026-10-20",
-    "planNote": "수강생 제출 자료 기반",
+    "stage": "2차 반영 (2026-10-21) — 실제 설비 고장 수리이력 양식을 그대로 읽기 · 「자료 점검」 화면",
+    "lastDate": "2026-10-21",
+    "planNote": "수강생이 보낸 2025~2026 설비 고장 수리이력(60건) 반영",
     "extras": [],
-    "planVersion": "v0.1",
+    "planVersion": "v0.2",
     "hasDb": false,
     "toolUrl": "https://aebonlee.github.io/data10-06/",
-    "repoUrl": "https://github.com/aebonlee/data10-06",
-    "planUrl": "https://github.com/aebonlee/data10-06/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
-    "planDocx": "https://github.com/aebonlee/data10-06/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
+    "readmeUrl": "view.html?r=data10-06&d=readme",
+    "planUrl": "view.html?r=data10-06&d=plan"
   },
   {
     "no": "07",
     "repo": "data10-07",
     "name": "이준호",
     "title": "협력사 공정불량 분석·품질개선 Master Plan",
-    "oneLine": "협력사 공정불량 Raw data(Excel)를 올려 불량유형을 분류·분석하고, 불량유형별 개선대책 Master Plan 초안(AI 반자동)을 만들어 간트차트로 계획·실적을 관리하고 Excel 보고서로 내보내는 브라우저 도구",
+    "oneLine": "협력사 공정불량을 화면에서 바로 등록하거나 엑셀 표를 붙여 넣어 불량유형 8종으로 분류·분석하고, 불량유형별 개선대책 Master Plan 초안(규칙 기반, 사내 허용 AI 가 있으면 다듬기)을 만들어 간트차트로 계획·실적을 관리하고, 화면과 같은 모양의 Excel 보고서로 내보내는 사내망 전용 브라우저 도구",
     "kind": "웹 도구",
-    "stage": "1단계 개발 완료 (2026-10-20)",
-    "lastDate": "2026-10-20",
-    "planNote": "수강생 제출 자료 기반",
+    "stage": "2차 반영 완료 (2026-10-21, 기획서 v0.2)",
+    "lastDate": "2026-10-21",
+    "planNote": "수강생 답변(10장) 반영, 반영 내용은 11장",
     "extras": [],
-    "planVersion": "v0.1",
+    "planVersion": "v0.2",
     "hasDb": false,
     "toolUrl": "https://aebonlee.github.io/data10-07/",
-    "repoUrl": "https://github.com/aebonlee/data10-07",
-    "planUrl": "https://github.com/aebonlee/data10-07/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
-    "planDocx": "https://github.com/aebonlee/data10-07/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
+    "readmeUrl": "view.html?r=data10-07&d=readme",
+    "planUrl": "view.html?r=data10-07&d=plan"
   },
   {
     "no": "08",
@@ -122,9 +116,8 @@ window.PROJECTS = [
     "planVersion": "v0.1",
     "hasDb": false,
     "toolUrl": "https://aebonlee.github.io/data10-08/",
-    "repoUrl": "https://github.com/aebonlee/data10-08",
-    "planUrl": "https://github.com/aebonlee/data10-08/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
-    "planDocx": "https://github.com/aebonlee/data10-08/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
+    "readmeUrl": "view.html?r=data10-08&d=readme",
+    "planUrl": "view.html?r=data10-08&d=plan"
   },
   {
     "no": "09",
@@ -140,9 +133,8 @@ window.PROJECTS = [
     "planVersion": "v0.1",
     "hasDb": false,
     "toolUrl": "https://aebonlee.github.io/data10-09/",
-    "repoUrl": "https://github.com/aebonlee/data10-09",
-    "planUrl": "https://github.com/aebonlee/data10-09/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
-    "planDocx": "https://github.com/aebonlee/data10-09/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
+    "readmeUrl": "view.html?r=data10-09&d=readme",
+    "planUrl": "view.html?r=data10-09&d=plan"
   },
   {
     "no": "10",
@@ -158,9 +150,8 @@ window.PROJECTS = [
     "planVersion": "v0.1",
     "hasDb": false,
     "toolUrl": "https://aebonlee.github.io/data10-10/",
-    "repoUrl": "https://github.com/aebonlee/data10-10",
-    "planUrl": "https://github.com/aebonlee/data10-10/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
-    "planDocx": "https://github.com/aebonlee/data10-10/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
+    "readmeUrl": "view.html?r=data10-10&d=readme",
+    "planUrl": "view.html?r=data10-10&d=plan"
   },
   {
     "no": "11",
@@ -176,9 +167,8 @@ window.PROJECTS = [
     "planVersion": "v0.1",
     "hasDb": false,
     "toolUrl": "https://aebonlee.github.io/data10-11/",
-    "repoUrl": "https://github.com/aebonlee/data10-11",
-    "planUrl": "https://github.com/aebonlee/data10-11/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
-    "planDocx": "https://github.com/aebonlee/data10-11/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
+    "readmeUrl": "view.html?r=data10-11&d=readme",
+    "planUrl": "view.html?r=data10-11&d=plan"
   },
   {
     "no": "12",
@@ -194,9 +184,8 @@ window.PROJECTS = [
     "planVersion": "v0.1",
     "hasDb": false,
     "toolUrl": "https://aebonlee.github.io/data10-12/",
-    "repoUrl": "https://github.com/aebonlee/data10-12",
-    "planUrl": "https://github.com/aebonlee/data10-12/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
-    "planDocx": "https://github.com/aebonlee/data10-12/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
+    "readmeUrl": "view.html?r=data10-12&d=readme",
+    "planUrl": "view.html?r=data10-12&d=plan"
   },
   {
     "no": "13",
@@ -212,27 +201,25 @@ window.PROJECTS = [
     "planVersion": "v0.1",
     "hasDb": false,
     "toolUrl": "https://aebonlee.github.io/data10-13/",
-    "repoUrl": "https://github.com/aebonlee/data10-13",
-    "planUrl": "https://github.com/aebonlee/data10-13/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
-    "planDocx": "https://github.com/aebonlee/data10-13/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
+    "readmeUrl": "view.html?r=data10-13&d=readme",
+    "planUrl": "view.html?r=data10-13&d=plan"
   },
   {
     "no": "14",
     "repo": "data10-14",
     "name": "이미란",
     "title": "재고실사 비효율 개선 (재고실사 Start-End)",
-    "oneLine": "ERP 재고 엑셀로 기준 일자·시각이 박힌 작업지시서를 만들고, 휴대폰으로 현장 실사 수량·사유·사진을 남기고, 담당자별 결과를 합쳐 차이대사·창고별·자재유형별·자재타입별 분석과 버전·원천 기록 연결이 있는 결과 보고서를 만드는 브라우저 도구",
+    "oneLine": "ERP 재고 엑셀과 창고 배정표로 기준 일자·시각이 박힌 재고실사 기록서(작업지시서 · SharePoint 취합 파일)를 만들고, 휴대폰이나 SharePoint 엑셀로 실물수량·사유(차이가 있으면 필수)·사진을 남기고, 여러 사람의 결과를 합쳐 차이대사·창고별·창고위치(사내/사외)별 분석과 버전·원천 기록 연결이 있는 결과 보고서를 만드는 브라우저 도구",
     "kind": "웹 도구",
-    "stage": "1단계 개발 완료 (2026-10-21)",
+    "stage": "1단계 개발 완료 · **2차 반영 완료 (2026-10-21)**",
     "lastDate": "2026-10-21",
-    "planNote": "수강생 제출 글·데이터 인벤토리 기반",
+    "planNote": "수강생 답(패들릿 댓글 ①②③⑤)과 첨부 엑셀 견본 반영. ④ 보고서(pptx) 목차는 확인 대기",
     "extras": [],
-    "planVersion": "v0.1",
+    "planVersion": "v0.2",
     "hasDb": true,
     "toolUrl": "https://aebonlee.github.io/data10-14/",
-    "repoUrl": "https://github.com/aebonlee/data10-14",
-    "planUrl": "https://github.com/aebonlee/data10-14/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
-    "planDocx": "https://github.com/aebonlee/data10-14/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
+    "readmeUrl": "view.html?r=data10-14&d=readme",
+    "planUrl": "view.html?r=data10-14&d=plan"
   },
   {
     "no": "15",
@@ -248,10 +235,9 @@ window.PROJECTS = [
     "planVersion": "v0.1",
     "hasDb": false,
     "toolUrl": "https://aebonlee.github.io/data10-15/",
-    "repoUrl": "https://github.com/aebonlee/data10-15",
-    "planUrl": "https://github.com/aebonlee/data10-15/blob/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.md",
-    "planDocx": "https://github.com/aebonlee/data10-15/raw/main/docs/01_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EA%B8%B0%ED%9A%8D%EC%84%9C.docx"
+    "readmeUrl": "view.html?r=data10-15&d=readme",
+    "planUrl": "view.html?r=data10-15&d=plan"
   }
 ];
-window.PROJECTS_UPDATED = "2026-10-21";
+window.PROJECTS_UPDATED = "2026-10-26";
 window.PROJECTS_LATEST = "2026-10-21";
