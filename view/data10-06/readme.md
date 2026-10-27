@@ -31,7 +31,7 @@
 | 설정 | 설비 목록(종류·모델·제조사·매뉴얼 메모), 진단 기준값, AI 연결(OpenAI 호환 주소·모델·본인 키, 기억은 선택), 백업(JSON, 사진 포함)·되살리기, 예시·모두 지우기 |
 | 다음 단계 | 보내 주실 자료 체크 목록, 2단계 순서 |
 
-- 로직 테스트: `node test/logic.test.mjs` (의존성 없음, 65개)
+- 로직 테스트: `node test/logic.test.mjs` (의존성 없음, 66개)
 - **판 올리기(고칠 때마다)**: `node scripts/bump-version.mjs 2026-10-28.1` — index.html 의 모든 js·css `?v=` · logic.js · app.js 를 같은 값으로. 브라우저가 옛 파일과 새 파일을 섞어 쓰지 않게 하고, 섞이면 화면이 「새 판이 나왔습니다 — 새로고침(Ctrl+F5)」로 멈춥니다. `--check` 로 같은지만 봅니다(로직 테스트도 봄)
 - 브라우저 점검(선택): `PLAYWRIGHT_CORE=<경로>/playwright-core node scripts/check-browser.mjs` — `FILE=<내 엑셀>` 을 주면 그 파일이 읽히는지만(건수만 출력)
 - 샘플 파일 다시 만들기: `node scripts/make-samples.js` → `samples/예시데이터_정비내역서.xlsx` · `예시데이터_수리이력_지금양식.xlsx`(10-23 수정본 모양 · 사진 포함) · `예시데이터_수리이력_2차양식.xlsx`(10-21 모양) · `수리이력_권장양식.xlsx`
