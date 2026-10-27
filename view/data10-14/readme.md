@@ -39,6 +39,7 @@ ERP 재고 엑셀과 창고 배정표로 기준 일자·시각이 박힌 재고�
 | 설정 | **허용 기준(기본 허용 0 / 선택: 차이율 · 금액)**, **사유 목록(기본 6개, 한 줄에 하나)**, 이 기기 작성자 이름, AI 연결(OpenAI 호환 주소·모델·본인 키, 기억은 선택), JSON 백업·모든 자료 지우기 |
 
 - 로직 테스트: `node test/logic.test.mjs` (의존성 없음)
+- **판 올리기(고칠 때마다)**: `node scripts/bump-version.mjs 2026-10-28.1` — index.html 의 모든 js·css `?v=` · logic.js · app.js 를 같은 값으로. 브라우저가 옛 파일과 새 파일을 섞어 쓰지 않게 하고, 섞이면 화면이 「새 판이 나왔습니다 — 새로고침(Ctrl+F5)」로 멈춥니다. `--check` 로 같은지만 봅니다(로직 테스트도 봄)
 - 보고서 PPT 테스트: `node test/pptx.test.mjs` (의존성 없음 — `vendor/jszip.min.js`)
 - 브라우저 점검: `PLAYWRIGHT_CORE=/경로/node_modules/playwright-core node scripts/check-browser.mjs` (선택 — ERP·배정표 올리기 → 기록서 엑셀 → 휴대폰 입력 → 합치기 → 보고서, 360·1280px 넘침)
 - 샘플 파일 다시 만들기: `node scripts/make-samples.js` → `samples/` ERP 재고 엑셀 · 창고 배정표 · SharePoint 취합 파일(실사자E·C 가 채운 것) · 직전 보고서 양식 pptx(가상 회사) 4개

@@ -38,6 +38,7 @@
 | 설정 | 기본값(가용시간·목표 대수·인원·달성률 목표·제품 이름), AI 연결(OpenAI 호환 주소·모델·본인 키, 기억은 선택), JSON 백업, 샘플, 모두 지우기 |
 
 - 로직 테스트: `node test/logic.test.mjs` (의존성 없음)
+- **판 올리기(고칠 때마다)**: `node scripts/bump-version.mjs 2026-10-28.1` — index.html 의 모든 js·css `?v=` · logic.js · app.js 를 같은 값으로. 브라우저가 옛 파일과 새 파일을 섞어 쓰지 않게 하고, 섞이면 화면이 「새 판이 나왔습니다 — 새로고침(Ctrl+F5)」로 멈춥니다. `--check` 로 같은지만 봅니다(로직 테스트도 봄)
 - 샘플 파일 다시 만들기: `node scripts/make-samples.js` → `samples/` 3개
 - 기획서 Word 다시 만들기: `python3 scripts/make-docx.py` (python-docx 필요)
 - 브라우저 확인(선택): `PLAYWRIGHT=<playwright 경로> node scripts/browser-check.cjs` — 화면 12개 × 1280·390px 가로 넘침, 스톱워치, 엑셀 가져오기, 콘솔 오류

@@ -30,7 +30,8 @@
 | ④ 신입 교육 | 주차별 커리큘럼(난이도 쉬움 → 어려움, 같은 난이도는 핵심 업무 순서, 1주차 문서 체계 오리엔테이션) · 업무별 **교육 한 장**(목적 · 흐름도 · 핵심 포인트 · 자주 하는 실수 · 함께 볼 문서 · 확인 퀴즈 3문항) — 흐름도 사실로 초안 · 퀴즈 자동 만들기 · 인쇄/PDF · Word · AI 초안(반자동) |
 | 설정 | 수시 업무의 1년 횟수 · 근무일 · 1일 시간, 핵심 업무 범위, 오래된 버전 기준(개월), 교육 기간(주), AI 연결(OpenAI 호환 주소 · 모델 · 본인 키, 기억은 선택), JSON 백업 |
 
-- 로직 테스트: `node test/logic.test.mjs` (의존성 없음, 32개)
+- 로직 테스트: `node test/logic.test.mjs` (의존성 없음, 33개)
+- **판 올리기(고칠 때마다)**: `node scripts/bump-version.mjs 2026-10-28.1` — index.html 의 모든 js·css `?v=` · logic.js · app.js 를 같은 값으로. 브라우저가 옛 파일과 새 파일을 섞어 쓰지 않게 하고, 섞이면 화면이 「새 판이 나왔습니다 — 새로고침(Ctrl+F5)」로 멈춥니다. `--check` 로 같은지만 봅니다(로직 테스트도 봄)
 - 샘플 파일 다시 만들기: `node scripts/make-samples.js` → `samples/` 업무 목록 · 문서 목록 xlsx (다시 읽어 원본과 같은지 확인)
 - 브라우저 점검(선택): `PLAYWRIGHT_CORE=<playwright-core 경로> node scripts/check-browser.mjs` — 주요 흐름 + 흐름도 글자 실측(getBBox) + 6가지 폭 가로 넘침
 - 기획서 Word 다시 만들기: `python3 scripts/make-docx.py` (python-docx 필요)

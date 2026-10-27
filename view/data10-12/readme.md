@@ -40,7 +40,8 @@
 
 **인증서 PDF** 는 서버로 보내지 않고 이 브라우저(IndexedDB)에만 둡니다. 한 장 15MB 까지. 다른 PC 로 옮길 때는 「JSON 백업(PDF 포함)」을 써 주세요.
 
-- 로직 테스트: `node test/logic.test.mjs` (의존성 없음, 55개)
+- 로직 테스트: `node test/logic.test.mjs` (의존성 없음, 56개)
+- **판 올리기(고칠 때마다)**: `node scripts/bump-version.mjs 2026-10-28.1` — index.html 의 모든 js·css `?v=` · logic.js · app.js 를 같은 값으로. 브라우저가 옛 파일과 새 파일을 섞어 쓰지 않게 하고, 섞이면 화면이 「새 판이 나왔습니다 — 새로고침(Ctrl+F5)」로 멈춥니다. `--check` 로 같은지만 봅니다(로직 테스트도 봄)
 - 브라우저 점검(선택): `PLAYWRIGHT_CORE=/경로/node_modules/playwright-core node scripts/check-browser.mjs`
 - 샘플 파일 다시 만들기: `node scripts/make-samples.js [기준일]` → `samples/` 관리대장 xlsx(관리대장 + 인증 이력 시트) + 인증서 txt·pdf + 첨부 시험용 pdf
 - 기획서 Word 다시 만들기: `python3 scripts/make-docx.py` (python-docx 필요)

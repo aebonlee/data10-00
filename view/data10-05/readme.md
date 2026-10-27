@@ -31,7 +31,8 @@
 | ⑥ AI 분석 | 계산된 사실만 담은 프롬프트 — **품번(품목1)·고객사(거래처1)를 별칭으로 가림(기본)**, 대응표는 이 PC 에만, AI 답은 실제 이름으로 되돌림(복사·붙여 넣기, 선택: 본인 키로 OpenAI 호환 서버에 자동 보내기) |
 | 설정 | 공정(순서·인원·근무시간·표준 개/인시·일 목표·**리드타임**), **안전재고 산식(월 물량 볼 달·근무일수·완성 리드타임·월 물량 직접 입력)**, **발주 품번 → 재고 모델 연결(세트·합계)**, 기준일·보는 기간·안전재고·알림 기준, 근무 요일·휴일, AI 연결, JSON 백업·불러오기, 엑셀 내보내기 |
 
-- 로직 테스트: `node test/logic.test.mjs` (의존성 없음, 37개)
+- 로직 테스트: `node test/logic.test.mjs` (의존성 없음, 38개)
+- **판 올리기(고칠 때마다)**: `node scripts/bump-version.mjs 2026-10-28.1` — index.html 의 모든 js·css `?v=` · logic.js · app.js 를 같은 값으로. 브라우저가 옛 파일과 새 파일을 섞어 쓰지 않게 하고, 섞이면 화면이 「새 판이 나왔습니다 — 새로고침(Ctrl+F5)」로 멈춥니다. `--check` 로 같은지만 봅니다(로직 테스트도 봄)
 - 샘플 파일 다시 만들기: `node scripts/make-samples.js` → `samples/` 3개(재고 체크 통합문서·포털 발주서·실적 표준 형식, 다시 읽어 확인)
 - 브라우저 점검(선택): `PLAYWRIGHT_CORE=…/node_modules/playwright-core node scripts/check-browser.mjs`
 - 기획서 Word 다시 만들기: `python3 scripts/make-docx.py` (python-docx)

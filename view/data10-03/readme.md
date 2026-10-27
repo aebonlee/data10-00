@@ -31,7 +31,8 @@ PDF 도면(벡터)의 치수 · 공차 · 기하공차 · 용접 표기를 인�
 | 일치율 측정 | 정답 엑셀 올리기(열 이름 자동 인식 · 원문만 있어도 됨) · 목표 1(값으로 짝) / 목표 2(번호로 짝) · **수강생 방식 필드 일치율(항목명 · 기준값 · 공차) · 완전 일치율** · 값 일치율 · 정밀도 · 재현율 · F1 · 구분별 · 놓친 것 · 값 다른 것 · 더 찾은 것 · 측정 기록과 추이(목표 85% 선) · 대조 결과 엑셀 · 정답 양식 |
 | 설정 | 테두리 띠 폭(상한 mm) · 표제란 낱말 · 부품표 · 보고서 쪽 빼기 · 주기 제외 · 「기타」 포함 · **일반공차(자동 — 주기에서 찾기 · ISO 13920 A~D · ISO 2768 f/m/c/v · 끔)** · 풍선 반지름 · 연결 거리 · 목표 % · 구역 칸 수, AI 연결(OpenAI 호환 주소 · 모델 · 본인 키, 기억은 선택), JSON 백업 · 되살리기 · 지우기 |
 
-- 로직 테스트: `node test/logic.test.mjs` (의존성 없음, 48개 — 예시 도면 5종을 pdf.js 로 실제로 읽는 전체 흐름 포함)
+- 로직 테스트: `node test/logic.test.mjs` (의존성 없음, 49개 — 예시 도면 5종을 pdf.js 로 실제로 읽는 전체 흐름 포함)
+- **판 올리기(고칠 때마다)**: `node scripts/bump-version.mjs 2026-10-28.1` — index.html 의 모든 js·css `?v=` · logic.js · app.js 를 같은 값으로. 브라우저가 옛 파일과 새 파일을 섞어 쓰지 않게 하고, 섞이면 화면이 「새 판이 나왔습니다 — 새로고침(Ctrl+F5)」로 멈춥니다. `--check` 로 같은지만 봅니다(로직 테스트도 봄)
 - 일치율 측정(명령줄): `node scripts/measure-samples.mjs --detail` (예시 5종) · `node scripts/measure-samples.mjs 도면.pdf 정답.xlsx [--balloon] [--std=dim|weld]` (내 도면 — `--balloon` 은 풍선 있는 도면 = 목표 2, 정답이 수강생 기준서 양식이면 `--std` 로 치수 · 용접 시트를 고름)
 - 예시 도면 다시 만들기: `python3 scripts/make-samples.py` (reportlab · openpyxl · fontTools, 글꼴은 matplotlib 의 DejaVuSans) → `samples/*.pdf` · `*_정답.xlsx` · `js/sample-pdfs.js`
 - 윤곽선 글자 참조표 다시 만들기: `python3 scripts/make-glyph-ref.py <LiberationSans-Regular.ttf>` (fontTools) → `js/glyph-ref.js`(Liberation Sans · DejaVu Sans 글자 윤곽 좌표)

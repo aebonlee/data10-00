@@ -38,6 +38,7 @@
 | 설정 | 점수 가중치·심각도 무게·반감기·닮은 정도 반영률·중점 기준, 부위 이름 사전, 점검 유형 낱말 사전, 모델 특성 표, AI 연결(OpenAI 호환 주소·모델·본인 키, 기억은 선택), JSON 백업 |
 
 - 로직 테스트: `node test/logic.test.mjs` (의존성 없음)
+- **판 올리기(고칠 때마다)**: `node scripts/bump-version.mjs 2026-10-28.1` — index.html 의 모든 js·css `?v=` · logic.js · app.js 를 같은 값으로. 브라우저가 옛 파일과 새 파일을 섞어 쓰지 않게 하고, 섞이면 화면이 「새 판이 나왔습니다 — 새로고침(Ctrl+F5)」로 멈춥니다. `--check` 로 같은지만 봅니다(로직 테스트도 봄)
 - 샘플 파일 다시 만들기: `node scripts/make-samples.js` → `samples/` 2개
 - 기획서 Word 다시 만들기: `python3 scripts/md2docx.py docs/01_프로젝트_기획서.md docs/01_프로젝트_기획서.docx` (python-docx 필요)
 

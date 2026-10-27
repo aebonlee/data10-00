@@ -46,7 +46,8 @@
 | 보고서 출력 | 협력사 하나 또는 전체 — Excel 6시트(화면과 같은 표 · 서식), Master Plan 이 없는 협력사도 불량 목록·집계는 나옴, 인쇄/PDF |
 | 설정 | 불량유형 8종 키워드·기본 대책(순서 = 우선순위), 담당부서, 개선 필요 항목 기준, 별칭 가리기, 사내망 안내, AI 연결(선택), 백업·복원 |
 
-- 로직 테스트: `node test/logic.test.mjs` (의존성 없음, 42개)
+- 로직 테스트: `node test/logic.test.mjs` (의존성 없음, 43개)
+- **판 올리기(고칠 때마다)**: `node scripts/bump-version.mjs 2026-10-28.1` — index.html 의 모든 js·css `?v=` · logic.js · app.js 를 같은 값으로. 브라우저가 옛 파일과 새 파일을 섞어 쓰지 않게 하고, 섞이면 화면이 「새 판이 나왔습니다 — 새로고침(Ctrl+F5)」로 멈춥니다. `--check` 로 같은지만 봅니다(로직 테스트도 봄)
 - 샘플 파일 다시 만들기: `node scripts/make-samples.js` → `samples/예시_협력사_공정불량_RawData.xlsx`·`.csv`
 - 브라우저 점검(선택): `PLAYWRIGHT_CORE=<playwright-core 경로> node scripts/check-browser.mjs` — 등록·붙여넣기·수정·백업 → 분석 → Master Plan → 보고서(서식) 흐름 + 외부 주소 요청 0건 + 6가지 폭 × 8화면 가로 넘침
 - 기획서 Word 만들기: `python3 scripts/md2docx.py docs/01_프로젝트_기획서.md` (python-docx)

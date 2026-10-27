@@ -34,6 +34,7 @@
 - 로직 테스트: `node test/logic.test.mjs` (의존성 없음)
 - 일부러 깨뜨려 테스트가 잡는지: `node scripts/break-check.mjs`
 - 브라우저 점검(선택): `PLAYWRIGHT_CORE=/경로/node_modules/playwright-core node scripts/check-browser.mjs`
+- **판 올리기(고칠 때마다)**: `node scripts/bump-version.mjs 2026-10-28.1` — index.html 의 모든 js·css `?v=` · logic.js · app.js · sample-data.js 를 같은 값으로(`--check` 는 같은지만). 브라우저가 옛 파일과 새 파일을 섞어 쓰면 화면이 「새 판이 나왔습니다 — 새로고침(Ctrl+F5)」로 멈춥니다
 - 샘플 파일 다시 만들기: `node scripts/make-samples.js` → `samples/수불_샘플_2026-10.xlsx`
 - 기획서 Word 다시 만들기: `python3 scripts/make-docx.py` (python-docx 필요)
 

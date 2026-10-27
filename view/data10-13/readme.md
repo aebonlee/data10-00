@@ -36,7 +36,8 @@
 
 **판정 규칙(기본값 — 기획서 10장 ④ 답을 받으면 맞춤)**: 한 항목이라도 하한 · 상한을 벗어나면 불합격(빈 칸이 함께 있어도) · 기준과 같은 값은 합격 · 빈 칸이 있으면 보류(검사 항목 누락) · 못 읽은 칸(「?」 · 단위 종류가 다름)은 보류 · mm/cm/μm, g/kg 은 기준 단위로 바꿔 비교. 값은 「적힌 그대로」 저장하고 매번 다시 판정하므로, 기준표나 규칙을 고치면 지난 판정도 새 기준으로 바뀝니다.
 
-- 로직 테스트: `node test/logic.test.mjs` (의존성 없음, 26개)
+- 로직 테스트: `node test/logic.test.mjs` (의존성 없음, 27개)
+- **판 올리기(고칠 때마다)**: `node scripts/bump-version.mjs 2026-10-28.1` — index.html 의 모든 js·css `?v=` · logic.js · app.js 를 같은 값으로. 브라우저가 옛 파일과 새 파일을 섞어 쓰지 않게 하고, 섞이면 화면이 「새 판이 나왔습니다 — 새로고침(Ctrl+F5)」로 멈춥니다. `--check` 로 같은지만 봅니다(로직 테스트도 봄)
 - 브라우저 점검(선택): `PLAYWRIGHT_CORE=<playwright-core 경로> node scripts/check-browser.mjs` — 주요 흐름 + 4가지 폭 × 7화면 가로 넘침(`BREAK=1` 이면 점검기가 넘침을 잡는지 확인)
 - 샘플 다시 만들기: `python3 scripts/make-samples.py` (reportlab · openpyxl, 양식 글자는 나눔고딕) → `samples/` 엑셀 2개 · `samples/공유폴더_샘플/*.pdf` 32개 · `js/sample-data.js` · `js/sample-pdfs.js`
 - 기획서 Word 다시 만들기: `python3 scripts/make-docx.py` (python-docx)

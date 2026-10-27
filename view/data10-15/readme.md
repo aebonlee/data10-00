@@ -38,7 +38,8 @@
 2. 클레임 목록 표는 첫 줄에만 `{{행.번호}}` `{{행.클레임번호}}` `{{행.합의금액}}` … 을 적습니다. 그 아래 빈 표 줄을 먼저 채우고, 모자라면 줄을 끼워 넣으며 합계 줄·병합·`=SUM()` 범위·인쇄 영역·그림 위치를 함께 내립니다.
 3. ⑤ 양식 템플릿에서 올리면 서식(글꼴·테두리·색·병합·로고·직인 그림)은 그대로 두고 값만 채웁니다.
 
-- 로직 테스트: `node test/logic.test.mjs` (의존성 없음, 31개)
+- 로직 테스트: `node test/logic.test.mjs` (의존성 없음, 32개)
+- **판 올리기(고칠 때마다)**: `node scripts/bump-version.mjs 2026-10-28.1` — index.html 의 모든 js·css `?v=` · logic.js · app.js 를 같은 값으로. 브라우저가 옛 파일과 새 파일을 섞어 쓰지 않게 하고, 섞이면 화면이 「새 판이 나왔습니다 — 새로고침(Ctrl+F5)」로 멈춥니다. `--check` 로 같은지만 봅니다(로직 테스트도 봄)
 - 브라우저 점검(선택): `PLAYWRIGHT_CORE=/경로/node_modules/playwright-core node scripts/check-browser.mjs`
 - 샘플 합의 결과 다시 만들기: `node scripts/make-samples.js` → `samples/클레임_합의결과_샘플.xlsx`
 - 기본 양식 다시 만들기: `python3 scripts/make-templates.py` (openpyxl 필요) → `samples/*_기본양식.xlsx` + `js/builtin-templates.js`

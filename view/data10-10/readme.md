@@ -56,7 +56,8 @@
 | 04 서식 관리 | 기본 3종(일반 회의 · 시험·검증 결과 리뷰 · 일정 점검), 칸 이름 · 역할 · 모양 · 도움말 편집, 순서 바꾸기, 복사 · 기본값으로, **워드 양식(.docx) · 양식 글로 새 서식 만들기** |
 | 05 설정 | AI 연결(OpenAI 호환 주소 · 모델 목록 · 본인 키 — 기억은 선택), 로컬 LLM 준비 안내, 늘 가릴 이름 · 가리기 기본값 · 메모 원문 저장 여부, 백업(.json) 받기 · 불러오기 · 모두 지우기 |
 
-- 로직 테스트: `node test/logic.test.mjs` (24개) · `node test/ai-endpoint.test.mjs` (13개) — 의존성 없음
+- 로직 테스트: `node test/logic.test.mjs` (25개) · `node test/ai-endpoint.test.mjs` (13개) — 의존성 없음
+- **판 올리기(고칠 때마다)**: `node scripts/bump-version.mjs 2026-10-28.1` — index.html 의 모든 js·css `?v=` · logic.js · app.js 를 같은 값으로. 브라우저가 옛 파일과 새 파일을 섞어 쓰지 않게 하고, 섞이면 화면이 「새 판이 나왔습니다 — 새로고침(Ctrl+F5)」로 멈춥니다. `--check` 로 같은지만 봅니다(로직 테스트도 봄)
 - 화면 점검(개발용): `PLAYWRIGHT=<playwright 폴더> node scripts/browser-check.cjs` — file:// 로 1280px · 390px 에서 흐름 전체를 눌러 봄(30개 × 2)
 - 예시 파일 다시 만들기: `python3 scripts/make-samples.py` → `samples/` 4개 (python-docx 필요)
 - 기획서 Word 다시 만들기: `python3 scripts/make-docx.py`
