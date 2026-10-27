@@ -75,11 +75,11 @@ window.PROJECTS = [
     "title": "설비고장 원인 및 진단파악(AI)",
     "oneLine": "증상을 넣으면 과거 정비 사례에서 가능한 고장 원인과 「먼저 확인할 것」을 짚어 주고, 쌓인 정비 사례로 초보자용 자체 정비 가이드북과 외부 수리 비용 현황을 만드는 브라우저 도구",
     "kind": "웹 도구",
-    "stage": "2차 반영 (2026-10-21) — 실제 설비 고장 수리이력 양식을 그대로 읽기 · 「자료 점검」 화면",
-    "lastDate": "2026-10-21",
-    "planNote": "수강생이 보낸 2025~2026 설비 고장 수리이력(60건) 반영",
+    "stage": "3차 반영 (2026-10-27) — 수리이력 수정본(조치사항·교체부품·사진1·처리일자) 그대로 읽기 · **엑셀에 붙인 사진을 사례에 붙이기**",
+    "lastDate": "2026-10-27",
+    "planNote": "수강생이 고쳐 보낸 수리이력 수정본(10-23, 47건 · 사진 41장) 반영",
     "extras": [],
-    "planVersion": "v0.2",
+    "planVersion": "v0.3",
     "hasDb": false,
     "toolUrl": "https://aebonlee.github.io/data10-06/",
     "readmeUrl": "view.html?r=data10-06&d=readme",
@@ -158,13 +158,13 @@ window.PROJECTS = [
     "repo": "data10-11",
     "name": "이성헌",
     "title": "Deep drawing press 제품 불량 최소화",
-    "oneLine": "Deep drawing press 작업일보 엑셀을 여러 달 쌓아 일별·월별·금형·소재별 작업량 대비 불량률, 4M·계절별 「불량이 몰린 조건」, 금형 보수 전후 비교, AI 프롬프트(사실만·이름 가림)와 보고서 초안을 만드는 브라우저 도구",
+    "oneLine": "Deep drawing press 작업일보 엑셀을 여러 달 쌓아 일별·월별·금형·소재(메이커·lot·규격)별 작업량 대비 불량률, 4M·계절별 「불량이 몰린 조건」, 금형 보수·설비(Press) 수선 전후 비교, 모델별 압력 작업표준 대비와 압력 저하 전파 목록, AI 프롬프트(사실만·이름 가림)와 보고서 초안을 만드는 브라우저 도구",
     "kind": "웹 도구",
-    "stage": "1단계 개발 완료 (2026-10-20)",
-    "lastDate": "2026-10-20",
-    "planNote": "수강생 제출 자료 기반",
+    "stage": "1단계 개발 완료 (2026-10-20) · **3차 요청 반영 (2026-10-27)**",
+    "lastDate": "2026-10-27",
+    "planNote": "3차 요청(패들릿 10-25: 메이커·규격 결과 확인, 소재 lot, 모델별 압력 작업표준, 설비 수선 이력, 압력 저하 전파) 반영. 실제 작업일보 견본은 확인 대기",
     "extras": [],
-    "planVersion": "v0.1",
+    "planVersion": "v0.3",
     "hasDb": false,
     "toolUrl": "https://aebonlee.github.io/data10-11/",
     "readmeUrl": "view.html?r=data10-11&d=readme",
@@ -237,7 +237,24 @@ window.PROJECTS = [
     "toolUrl": "https://aebonlee.github.io/data10-15/",
     "readmeUrl": "view.html?r=data10-15&d=readme",
     "planUrl": "view.html?r=data10-15&d=plan"
+  },
+  {
+    "no": "16",
+    "repo": "data10-16",
+    "name": "이성헌",
+    "title": "원/부자재 미결 방지 사전 관리",
+    "oneLine": "입출고 수불 엑셀과 생산계획으로 자재(강종·규격)별 대당 출고 요율을 내 차 3개월 예상 출고·월별 기초재고·부족량을 굴리고, MOQ·리드타임·안전재고를 반영해 발주 마감과 권장 발주량을 우선순위 색(빨강·주황·노랑·초록)으로 구분한 발주 리스트, 장기·불용 재고 지표, AI 프롬프트(사실만·이름 가림)와 보고서 초안을 만드는 브라우저 도구",
+    "kind": "웹 도구",
+    "stage": "1단계 개발 완료 (2026-10-27)",
+    "lastDate": "2026-10-27",
+    "planNote": "수강생 제출 자료 기반",
+    "extras": [],
+    "planVersion": "v0.1",
+    "hasDb": false,
+    "toolUrl": "https://aebonlee.github.io/data10-16/",
+    "readmeUrl": "view.html?r=data10-16&d=readme",
+    "planUrl": "view.html?r=data10-16&d=plan"
   }
 ];
-window.PROJECTS_UPDATED = "2026-10-26";
-window.PROJECTS_LATEST = "2026-10-21";
+window.PROJECTS_UPDATED = "2026-10-27";
+window.PROJECTS_LATEST = "2026-10-27";
